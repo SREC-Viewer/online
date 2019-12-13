@@ -4,7 +4,7 @@ Vue.component('tabs', {
   template: `
     <div class="column">
       <div class="tabs is-boxed">
-        <ul style="overflow:hidden;">
+        <ul>
           <li v-for="(item, index) in tabObject.list" :key="item.id" :class="{'is-active': tabObject.selected === index}" @click="clickTab(tabObject, index)">
             <a :title="item.name">
               <span class="tabname">{{item.name}}</span>
@@ -80,7 +80,7 @@ Vue.component('tabs', {
 Vue.component('ErrMsg', {
   props: ['o'],
   template: `
-    <div style="position:fixed; right:0; bottom:0;">
+    <div class="errmsg">
       <div v-for="(err, index) in item" :key="index" class="notification is-warning">
         <button class="delete" @click="removeErr(index)"></button>
         {{err.filename}}<br/>
@@ -106,7 +106,7 @@ Vue.component('OptionDlg', {
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">初期表示設定<span style="font-size:0.5em; padding-left:20px;">※Cookieを使用しています</span></p>
+          <p class="modal-card-title">初期表示設定<span class="small">※Cookieを使用しています</span></p>
           <button class="delete" aria-label="close" @click="closeDlg"></button>
         </header>
         <section class="modal-card-body">
@@ -199,7 +199,7 @@ Mail      <a href="mailto:froghand0104@gmail.com">froghand0104@gmail.com</a>
 Blog      <a href="http://froghand0104.blogspot.com" target="_blank">http://froghand0104.blogspot.com</a>
 GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="_blank">https://github.com/satoshiTajima005/SREC-Viewer-Web</a>
 </pre>【使用方法など】
-<pre style="height:200px;overflow:auto;display:block;border:1px solid #666;background:#fff;padding:10px">
+<pre class="helpPre">
 電気・電子・自動車業界で、環境情報伝達に一般的に使用されている
 ・JAMP-AIS [*.xml]
 ・JAMP-MSDSPlus [*.xml]
@@ -221,7 +221,7 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="
 
 問題がありましたらメールかブログコメントで連絡をいただけると助かります。
 </pre> 【著作権情報】
-<pre style="height:100px;overflow:auto;display:block;border:1px solid #666;background:#fff;padding:10px">
+<pre class="helpPre">
 ---AIS/MSDSplus表示機能に関して---
   本ツールはECALGA環境辞書を複写/引用しています。
   ECALGA環境辞書の著作権はJEITA ECセンターにあります。
