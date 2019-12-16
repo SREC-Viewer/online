@@ -197,7 +197,7 @@ Copyright 2010 - 2019 Satoshi Tajima
 <a href="http://opensource.org/licenses/mit-license.php">Released under the MIT license</a>
 Mail      <a href="mailto:froghand0104@gmail.com">froghand0104@gmail.com</a>
 Blog      <a href="http://froghand0104.blogspot.com" target="_blank">http://froghand0104.blogspot.com</a>
-GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="_blank">https://github.com/satoshiTajima005/SREC-Viewer-Web</a>
+GitHub    <a href="https://srec-viewer.github.io/online" target="_blank">https://srec-viewer.github.io/online</a>
 </pre>【使用方法など】
 <pre class="helpPre">
 電気・電子・自動車業界で、環境情報伝達に一般的に使用されている
@@ -213,15 +213,15 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="
 ・ファイル関連付けを行いたい方は、<a href="https://froghand0104.blogspot.com/p/blog-page.html" target="_blank">ダウンロード版</a>をご使用ください。
 ・多言語化は・・・ご要望が多ければやろうかな
 
-※環境情報は機密事項を含むので、オプション機能を除くすべての機能は
+※環境情報は機密事項を含むので、オプション機能とアクセス解析を除くすべての機能は
 　クライアント側で処理しており、サーバーに表示したファイル内容が
 　送信されることはありません。
 ※JGPSSIの表示機能に関しては、実務上ほぼ使われなくなったので、
 　大幅改定を機に削除しました。
-
 問題がありましたらメールかブログコメントで連絡をいただけると助かります。
-</pre> 【著作権情報】
+</pre>【著作権情報ほか】
 <pre class="helpPre">
+【著作権】
 ---AIS/MSDSplus表示機能に関して---
   本ツールはECALGA環境辞書を複写/引用しています。
   ECALGA環境辞書の著作権はJEITA ECセンターにあります。
@@ -234,7 +234,25 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="
  ==SpyGlass icon==
   Creator : VistaICO Toolbar Icons
   Website : <a href="http://www.vistaico.com/contact.htm">http://www.vistaico.com/contact.htm</a>
-  Copyright (C) VistaICO.com</pre>
+  Copyright (C) VistaICO.com
+
+【免責事項】
+・当サイトからリンクやバナーなどによって他のサイトに移動された場合、
+　移動先サイトで提供される情報、サービス等について一切の責任を負いません。
+・当ツールを使用したことによって生じた損害については一切の責任を負いません。
+
+【プライバシーポリシー】
+当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
+このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。
+このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
+この機能はCookieを無効にすることで収集を拒否することが出来ますので、
+お使いのブラウザの設定をご確認ください。
+この規約に関して、詳しくは<a target="_blank" href="https://www.google.com/analytics/terms/jp.html">[Google アナリティクス利用規約]</a>をご参照ください。
+<!--
+当サイトは第三者配信の広告サービス「Google Adsense グーグルアドセンス」を利用しています。
+広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookie（クッキー）を使用することがあります。
+Cookie（クッキー）を無効にする設定およびGoogleアドセンスに関する詳細は<a target="_blank" href="https://www.google.co.jp/policies/technologies/ads/">[広告 – ポリシーと規約 – Google]</a>をご覧ください。
+--></pre>
       </section>
     </div>
   </div>
