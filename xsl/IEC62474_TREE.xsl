@@ -67,7 +67,7 @@
         {"name":"ID", "class":"id", "value":"<xsl:value-of select="@id" />"},
         {"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
         {"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
-        {"name":"質量%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
+        {"name":"質量%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"}
         <!--
         {"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />"},
         {"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />"},
@@ -95,15 +95,15 @@
         {"name":"ID", "class":"materialClassID", "value":"<xsl:value-of select="MaterialClassID/EntryID/@entryIdentity" />"},
         {"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
         {"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
-        {"name":"質量%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
+        {"name":"質量%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"}
         <!--
         {"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />"},
         {"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />"},
         {"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />"},
         {"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />"},
+        {"name":"固有ID付与機関", "class":"authority", "value":"<xsl:value-of select="UniqueID/@authority" />"},
+        {"name":"固有ID", "class":"identity", "value":"<xsl:value-of select="UniqueID/@identity" />"}
         -->
-        {"name":"", "class":"authority", "value":"<xsl:value-of select="UniqueID/@authority" />"},
-        {"name":"", "class":"identity", "value":"<xsl:value-of select="UniqueID/@identity" />"}
       ]
       <xsl:if test="count(./SubstanceGroup)+count(./Substance)!=0">
         ,"children":[
