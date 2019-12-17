@@ -66,11 +66,11 @@
         {"name":"備考", "class":"comment", "value":"<xsl:value-of select="@comment" />"},
         {"name":"ID", "class":"id", "value":"<xsl:value-of select="@id" />"},
         {"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
-        {"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"}
+        {"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
+        {"name":"質量%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
         <!--
         {"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />"},
         {"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />"},
-        {"name":"", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
         {"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />"},
         {"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />"},
         -->
@@ -95,10 +95,10 @@
         {"name":"ID", "class":"materialClassID", "value":"<xsl:value-of select="MaterialClassID/EntryID/@entryIdentity" />"},
         {"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
         {"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
+        {"name":"質量%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
         <!--
         {"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />"},
         {"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />"},
-        {"name":"", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
         {"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />"},
         {"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />"},
         -->
@@ -126,13 +126,13 @@
 				{"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
         {"name":"日本語名", "class":"jname", "value":"<xsl:call-template name="getSubstanceName"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>"},        
 				{"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
+				{"name":"質量%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
+				{"name":"材質比率%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
         <!--
 				{"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />
 				{"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />
-				{"name":"", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />
 				{"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />
 				{"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />
-				{"name":"", "class":"matMassPercent", "value":"<xsl:value-of select="MatMassPercent/@massPercent" />
 				{"name":"", "class":"matPercentPlusTolerance", "value":"<xsl:value-of select="MatMassPercent/@positiveTolerance" />
 				{"name":"", "class":"matPercentMinusTolerance", "value":"<xsl:value-of select="MatMassPercent/@negativeTolerance" />
         -->
@@ -163,13 +163,13 @@
 				{"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
         {"name":"日本語名", "class":"jname", "value":"<xsl:call-template name="getSubstanceName"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>"},
 				{"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
+				{"name":"質量%", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
+				{"name":"材質比率%", "class":"matMassPercent", "value":"<xsl:value-of select="MatMassPercent/@massPercent" />"},
         <!--
 				{"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />
 				{"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />
-				{"name":"", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />
 				{"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />
 				{"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />
-				{"name":"", "class":"matMassPercent", "value":"<xsl:value-of select="MatMassPercent/@massPercent" />
 				{"name":"", "class":"matPercentPlusTolerance", "value":"<xsl:value-of select="MatMassPercent/@positiveTolerance" />
 				{"name":"", "class":"matPercentMinusTolerance", "value":"<xsl:value-of select="MatMassPercent/@negativeTolerance" />
         -->
