@@ -365,7 +365,17 @@
     <xsl:if test="$id='00160'">ペルフルオロオクタン酸(PFOA)とその塩</xsl:if>
     <xsl:if test="$id='00161'">PFOA関連物質</xsl:if>
     <xsl:if test="$id='00162'">亜リン酸トリス(直鎖、分岐鎖4-ノニルフェニル)(TNPP)(直鎖、分岐鎖4-ノニルフェノール(4-NP)を0.1w/w%以上含有するもの）</xsl:if>
-
+    <xsl:if test="$id='00163'">四ホウ酸二ナトリウム(七酸化四ホウ酸二ナトリウム),水和物</xsl:if>
+    <xsl:if test="$id='00164'">フタル酸ジイソヘキシル</xsl:if>
+    <xsl:if test="$id='00165'">パーフルオロブタンスルホン酸(PFBS)とその塩</xsl:if>
+    <xsl:if test="$id='00166'">カドミウム/カドミウム化合物</xsl:if>
+    <xsl:if test="$id='00167'">六価クロム化合物</xsl:if>
+    <xsl:if test="$id='00168'">鉛/鉛化合物</xsl:if>
+    <xsl:if test="$id='00169'">水銀/水銀化合物</xsl:if>
+    <xsl:if test="$id='00170'">ジブチルビス(2,4-ペンタンジオナト)スズ(IV)</xsl:if>
+    <xsl:if test="$id='00171'">ハロゲン化難燃剤</xsl:if>
+    <xsl:if test="$id='00172'">2,5,8,11,14-ペンタオキサペンタデカン</xsl:if>
+    <xsl:if test="$id='00173'">ジオクチルスズジラウレート,スタンナン,ジオクチル-,ビス(ココ アシルオキシ)誘導体及びその他のスタンナン,ジオクチル-,ビス(脂肪酸アシルオキシ)誘導体(その中の脂肪酸アシルオキシ部分の主な炭素数はC12)</xsl:if>
 	</xsl:template>
 
 <!--
@@ -530,6 +540,17 @@
     <xsl:if test="$id='00160'">全製品</xsl:if>
     <xsl:if test="$id='00161'">全製品</xsl:if>
     <xsl:if test="$id='00162'">全製品</xsl:if>
+    <xsl:if test="$id='00163'">全製品</xsl:if>
+    <xsl:if test="$id='00164'">全製品</xsl:if>
+    <xsl:if test="$id='00165'">全製品</xsl:if>
+    <xsl:if test="$id='00166'">画面サイズが4インチを超えるビデオディスプレイデバイス</xsl:if>
+    <xsl:if test="$id='00167'">画面サイズが4インチを超えるビデオディスプレイデバイス</xsl:if>
+    <xsl:if test="$id='00168'">画面サイズが4インチを超えるビデオディスプレイデバイス</xsl:if>
+    <xsl:if test="$id='00169'">画面サイズが4インチを超えるビデオディスプレイデバイス</xsl:if>
+    <xsl:if test="$id='00170'">全製品</xsl:if>
+    <xsl:if test="$id='00171'">100cm2を超える画面領域を備えたテレビ、モニター、デジタルサイネージディスプレイなどの電子ディスプレイのエンクロージャーとスタンド</xsl:if>
+    <xsl:if test="$id='00172'">全製品</xsl:if>
+    <xsl:if test="$id='00173'">全製品</xsl:if>
   </xsl:template>
 
 <!--
@@ -694,6 +715,17 @@
     <xsl:if test="$id='00160'">成形品か混合物にPFOAとその塩で0.0000025重量%(25ppb)[報告レベル:成形品,混合物]</xsl:if>
     <xsl:if test="$id='00161'">PFOA関連物質の1つまたは組み合わせで1ppm(1000ppb)[報告レベル:成形品,混合物]</xsl:if>
     <xsl:if test="$id='00162'">0.1重量%(1000ppm)[報告レベル:成形品]</xsl:if>
+    <xsl:if test="$id='00163'">0.1重量%(1000ppm)[報告レベル:成形品]</xsl:if>
+    <xsl:if test="$id='00164'">0.1重量%(1000ppm)[報告レベル:成形品]</xsl:if>
+    <xsl:if test="$id='00165'">0.1重量%(1000ppm)[報告レベル:成形品]</xsl:if>
+    <xsl:if test="$id='00166'">均質材料中のカドミウムの0.01重量%(100ppm)[報告レベル:材料]</xsl:if>
+    <xsl:if test="$id='00167'">均質材料中の六価クロムの0.1重量%(1000ppm)[報告レベル:材料]</xsl:if>
+    <xsl:if test="$id='00168'">均質材料中の鉛の0.1重量%(1000ppm)[報告レベル:材料]</xsl:if>
+    <xsl:if test="$id='00169'">均質材料中の水銀の0.1重量%(1000ppm)[報告レベル:材料]</xsl:if>
+    <xsl:if test="$id='00170'">0.1重量%(1000ppm)[報告レベル:成形品]</xsl:if>
+    <xsl:if test="$id='00171'">意図的添加[報告レベル:製品]</xsl:if>
+    <xsl:if test="$id='00172'">0.1重量%(1000ppm)[報告レベル:成形品]</xsl:if>
+    <xsl:if test="$id='00173'">0.1重量%(1000ppm)[報告レベル:成形品]</xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>
