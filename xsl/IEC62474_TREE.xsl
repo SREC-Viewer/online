@@ -54,7 +54,7 @@
           <xsl:apply-templates select="./Substance" />
         ]
       </xsl:if>
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
   </xsl:template>
   <!--####################################### 材質区分 #######################################-->
   <xsl:template match="MaterialClass">
@@ -82,7 +82,7 @@
           <xsl:apply-templates select="./Substance" />
         ]
       </xsl:if>
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
   </xsl:template>
   <!--####################################### 材質 #######################################-->
   <xsl:template match="Material">
@@ -111,7 +111,7 @@
           <xsl:apply-templates select="./Substance" />
         ]
       </xsl:if>
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
   </xsl:template>
 
    	<!--####################################### 物質群 #######################################-->
@@ -148,7 +148,7 @@
           <xsl:apply-templates select="./Exemptions" />
         ]
       </xsl:if>
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
 	</xsl:template>
 
  	<!--####################################### 物質 #######################################-->
@@ -184,7 +184,7 @@
           <xsl:apply-templates select="./Exemptions" />
         ]
       </xsl:if>
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
 	</xsl:template>
   <!--####################################### 適用除外 #######################################-->
   <xsl:template match="Exemptions">
@@ -200,7 +200,7 @@
         {"name":"機関", "class":"authority", "value":"<xsl:value-of select="UniqueID/@authority" />"},
         {"name":"ID", "class":"identity", "value":"<xsl:value-of select="UniqueID/@identity" />"}
       ]
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
   </xsl:template>
 
 <!--
