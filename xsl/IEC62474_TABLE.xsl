@@ -37,7 +37,7 @@
       "AppJA":"<xsl:call-template name="getSubstanceApp"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>",
       "ThresholdJA":"<xsl:call-template name="getSubstanceThreshold"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>"
       <xsl:apply-templates select="Exemptions" />
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
 	</xsl:template>
 
   <!--####################################### 物質群 V1 #######################################-->
@@ -59,7 +59,7 @@
       "AppJA":"<xsl:call-template name="getSubstanceApp"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>",
       "ThresholdJA":"<xsl:call-template name="getSubstanceThreshold"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>"
       <xsl:apply-templates select="Exemptions" />
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
 	</xsl:template>
 
   <!--####################################### 遵法判断 V2 #######################################-->
@@ -83,7 +83,7 @@
       "AppJA":"<xsl:call-template name="getSubstanceApp"><xsl:with-param name="id" select="string(DsDsgID/@entryIdentity)" /></xsl:call-template>",
       "ThresholdJA":"<xsl:call-template name="getSubstanceThreshold"><xsl:with-param name="id" select="string(DsDsgID/@entryIdentity)" /></xsl:call-template>"
       <xsl:apply-templates select="Exemptions" />
-    }
+    }<xsl:if test="last()!=position()">,</xsl:if>
   </xsl:template>
 
   <!--####################################### 適用除外 #######################################-->
@@ -267,6 +267,7 @@
     <xsl:if test="$id='00133'">1,3-プロパンスルトン</xsl:if>
     <xsl:if test="$id='00134'">2-(2-ヒドロキシ-3,5-ジ-t-ブチルフェニル)-5-クロロベンゾトリアゾール[別名:2-(3,5-ジ-tert-ブチル-2-ヒドロキシフェニル)-5-クロロベンゾトリアゾール]</xsl:if>
     <xsl:if test="$id='00135'">2-(2H-ベンゾトリアゾール-2-イル)-6-sec-ブチル-4-tert-ブチルフェノール</xsl:if>
+    <xsl:if test="$id='00137'">パーフルオロノナン-1-酸とそのナトリウム及びアンモニウム塩類</xsl:if>
     <xsl:if test="$id='00138'">ベンゾ[a]ピレン</xsl:if>
     <xsl:if test="$id='00139'">ジシクロヘキサン-1-イル=フタラート</xsl:if>
     <xsl:if test="$id='00140'">パーフルオロノナン-1-酸とそのナトリウム及びアンモニウム塩類</xsl:if>
@@ -276,7 +277,7 @@
     <xsl:if test="$id='00144'">クリセン</xsl:if>
     <xsl:if test="$id='00145'">ベンゾ[a]アントラセン</xsl:if>
     <xsl:if test="$id='00146'">水酸化カドミウム</xsl:if>
-    <xsl:if test="$id='00147'">1,6,7,8,9,14,15,16,17,17,18,18-ドデカクロロペンタシクロ[12.2.1.16,9.02,13.05,10]オクタデカ-7,15-ジエン (&quot;デクロランプラス&quot;™)</xsl:if>
+    <xsl:if test="$id='00147'">1,6,7,8,9,14,15,16,17,17,18,18-ドデカクロロペンタシクロ[12.2.1.16,9.02,13.05,10]オクタデカ-7,15-ジエン (デクロランプラス™)</xsl:if>
     <xsl:if test="$id='00148'">ベンゾ[g,h,i]ペリレン</xsl:if>
     <xsl:if test="$id='00149'">2,2,4,4,6,6,8,8-オクタメチルシクロテトラシロキサン</xsl:if>
     <xsl:if test="$id='00150'">2,2,4,4,6,6,8,8,10,10-デカメチルシクロペンタシロキサン</xsl:if>
@@ -448,6 +449,7 @@
     <xsl:if test="$id='00133'">全製品</xsl:if>
     <xsl:if test="$id='00134'">全製品</xsl:if>
     <xsl:if test="$id='00135'">全製品</xsl:if>
+    <xsl:if test="$id='00137'">全製品</xsl:if>
     <xsl:if test="$id='00138'">全製品</xsl:if>
     <xsl:if test="$id='00139'">全製品</xsl:if>
     <xsl:if test="$id='00140'">全製品</xsl:if>
@@ -629,6 +631,7 @@
     <xsl:if test="$id='00133'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
     <xsl:if test="$id='00134'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
     <xsl:if test="$id='00135'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+    <xsl:if test="$id='00137'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
     <xsl:if test="$id='00138'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
     <xsl:if test="$id='00139'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
     <xsl:if test="$id='00140'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
